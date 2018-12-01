@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
     originalval = this.value;
   }).change(function(){
     /* Source: http://jsfiddle.net/zq2pncuc/*/
-    console.log(originalval);
+    // console.log(originalval);
     if(originalval){
       $(".step2selection").find("option[value='"+originalval+"']").prop("disabled",false);
     }

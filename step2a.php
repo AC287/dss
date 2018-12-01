@@ -19,11 +19,12 @@ get_header();
   $rankexist = $wpdb->get_results("SELECT * FROM wpii_teamdata WHERE team LIKE '%$teamname';");
   // print_r($rankexist[0]->tq1);
   // print_r($tq);
-  if($rankexist[0]->tq1=="" || $rankexist[0]->tq1==NULL) {
+  if(!$rankexist) {
     // print_r("updating");
-    $wpdb->update(
+    $wpdb->insert(
       'wpii_teamdata',
       array (
+          'team' => $teamname,
           'tq1' => $tq[q1],
           'tq2' => $tq[q2],
           'tq3' => $tq[q3],
@@ -41,13 +42,7 @@ get_header();
           'tq15' => $tq[q15],
       ),
       array(
-        'team' => $rankexist[0]->team
-      ),
-      array(
-        '%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d'
-      ),
-      array(
-        '%s'
+        '%s','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d','%d'
       )
     );
   } else {
@@ -65,7 +60,6 @@ get_header();
     <button type="submit" class="btn btn-primary btn-lg" id="step4" >Individual Score Result</button>
     </form>
   </div>
-  </form>
 </div>
 
 

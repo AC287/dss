@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
     event.preventDefault();
     var teampass = prompt("Enter team password given by Ian Howe", "");
     console.log(teampass);
-    if(teampass == "ineedheal") {
+    if(teampass == "sos") {
       $("#step2data").submit();
     } else {
       var tryagain = alert("Please try again.");
