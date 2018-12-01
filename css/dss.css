@@ -41,11 +41,38 @@ body {
   margin: 20px;
 }
 
-.step4-table1 {
+.step4-table1, .step4-table2, .step4-table3 {
   background-color: white;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 .table1-data {
   text-align: center;
+}
+
+.t1-total-ind-exp, .t1-total-team-exp {
+  font-size: 16pt;
+  font-weight: bold;
+}
+.table1-total-x-exp {
+  text-align: center;
+}
+
+.step4-table-2-container {
+  /* width: 50%; */
+}
+.table2-head-center, .table2-score, .step4-table3-center {
+  text-align: center;
+}
+.table2-tis {
+  text-align: right;
+  font-weight: bold;
+  font-size: 14pt;
+}
+.t2s-avg-num {
+  font-size: 16pt;
+}
+.t2s-step6-finale {
+  font-weight: bold;
 }

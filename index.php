@@ -18,6 +18,12 @@
         <option value="Team Bravo">Team Bravo</option>
         <option value="Team Charlie">Team Charlie</option>
         <option value="Team Delta">Team Delta</option>
+        <option value="Team Echo">Team Echo</option>
+        <option value="Team Foxtrot">Team Foxtrot</option>
+        <option value="Team Golf">Team Golf</option>
+        <option value="Team Hotel">Team Hotel</option>
+        <option value="Team India">Team India</option>
+        <option value="Team Juliett">Team Juliett</option>
       </select>
     </div>
     <div class="form-group formbutton">
