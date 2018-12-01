@@ -25,3 +25,14 @@ body {
   /* opacity: 0.5; */
   padding: 20px;
 }
+
+.step1a, .step2a {
+  height: 50vh;
+  /* margin: 0 auto; */
+  text-align: center;
+  padding: 50px;
+}
+.step1a button {
+  min-width: 35%;
+  margin: 20px;
+}

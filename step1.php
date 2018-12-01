@@ -37,7 +37,7 @@ get_header();
 ?>
 
 <div class="container">
-  <h3>Welcome <?php echo $firstname;?></h3>
+  <h3>Hello <?php echo $firstname;?>, you are with <?php echo $teamname?>.</h3>
   <p>This is the first step of the simulation. </p>
   <div class='form-container'>
   <form action="<?php echo home_url();?>/step1a" method="post" autocomplete="off" id="individualdata">
@@ -53,14 +53,27 @@ get_header();
       // print_r($getquestions);
 
       for($q=1; $q <=15; $q++) {
+        $userentry = "iq".$q;
         $qtitle = "q".$q;
         echo "<tr>";
           echo "<th scope='row'>".$getquestions[0]->$qtitle."</th>";
           echo "<td>";
             echo "<select class='form-control step1selection' required id='iqvalue$q' name='i$qtitle' required>";
-            echo "<option selected value=''> - </option>";
+            if(!$userexist[0]->$userentry) {
+              echo "<option selected value=''> - </option>";
+            }else {
+              echo "<option value='' disabled> - </option>";
+            }
             for($c=1; $c<=15; $c++) {
-              echo "<option value='$c'>$c</option>";
+              if($userexist[0]->$userentry){
+                if($userexist[0]->$userentry == $c) {
+                  echo "<option value='$c' selected>$c</option>";
+                } else {
+                  echo "<option value='$c' disabled>$c</option>";
+                }
+              } else {
+                echo "<option value='$c'>$c</option>";
+              }
             }
             echo "</select>";
           echo "</td>";
