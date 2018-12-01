@@ -7,6 +7,10 @@ body {
   background-size: cover;
 }
 
+.container{
+  font-size: 12pt;
+}
+
 .header-container {
   padding-bottom: 30px;
 }
@@ -35,4 +39,13 @@ body {
 .step1a button {
   min-width: 35%;
   margin: 20px;
+}
+
+.step4-table1 {
+  background-color: white;
+  padding: 20px;
+}
+
+.table1-data {
+  text-align: center;
 }

@@ -26,7 +26,7 @@ get_header();
       <thead>
         <tr>
           <th scope="col"><h3>Salvaged items</h3></th>
-          <th scope="col"><h3>Team Rank</h3><th>
+          <th scope="col"><h3>Team Rank</h3></th>
         </tr>
       </thead>
       <tbody>
