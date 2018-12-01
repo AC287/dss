@@ -1,0 +1,27 @@
+body {
+  background: url("../images/desert00.jpg") no-repeat center center fixed;
+  /* credit: https://www.pexels.com/photo/daylight-desert-drought-dry-459319/ */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header-container {
+  padding-bottom: 30px;
+}
+
+.header-container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.formbutton {
+  text-align: center;
+}
+
+.form-container {
+  background-color: white;
+  /* opacity: 0.5; */
+  padding: 20px;
+}
